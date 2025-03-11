@@ -1,0 +1,30 @@
+{
+	"manifest_version": 3,
+	"name": "SYProxy",
+	"description": "SYProxy ile ağ tarayıcıda proxy kullanın!",
+	"version": "0.3.1",
+
+	"action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup/index.html"
+	},
+
+	"background": {
+		"service_worker": "background.min.js"
+	},
+
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+
+	"permissions": [
+		"storage",
+		"proxy"
+	],
+	
+	"host_permissions": [
+		"<all_urls>"
+	]
+}
